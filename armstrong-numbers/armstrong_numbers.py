@@ -1,3 +1,5 @@
+# Initial solution
+
 from math import pow
 
 def is_armstrong(number):
@@ -9,5 +11,9 @@ def is_armstrong(number):
         return True
     return False
 
+# Better still (or should I say shorter still? :))
+
+def is_armstrong(number):
+    return sum([int(i) ** len(str(number)) for i in str(number)]) == number
 
 

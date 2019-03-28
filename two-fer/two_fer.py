@@ -1,2 +1,2 @@
 def two_fer(name='you'):
-    return 'One for {}, one for me.'.format('you' if name == 'you' else name)
+    return 'One for {}, one for me.'.format(name)
